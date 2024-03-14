@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: luckiest guy;
+            font-weight: 900;
+        }
+
+        h1 {
+
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            font-size: 100px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: ;
+        }
+
+        .flex-container0 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin: 10pc;
+
+        }
+
+        .flex-container1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 50px;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+
+        .input {
+            width: 95%;
+            height: 150px;
+            border: 10px solid black;
+            border-radius: 20px;
+            padding: 25px;
+            font-size: 20px;
+            margin: 15px;
+            font-size: 50PX;
+
+        }
+
+        .calculator {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .button {
+            border: 10px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 50px;
+            height: 110px;
+            cursor: pointer;
+            background-color: yellow;
+            text-decoration: none;
+            color: black;
+        }
+
+        button:hover {
+            color: white;
+            padding: 70px;
+            font-size: 50px;
+        }
+
+        a:hover {
+            color: white;
+            padding: 70px;
+            font-size: 50px;
+        }
+
+        .input {
+            grid-column: span 4;
+            height: 100px;
+            font-size: 100px;
+            text-align: left;
+            ;
+        }
+
+        header {
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 50px;
+            margin: 0px;
+            font-size: 50px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1> <img src="sheep.png" alt="Logo" style="width:200px;height:200px;">FORM.JS</h1>
+        <nav>
+            <div class="flex-container1">
+                <a href="form.html" class="button">Form</a>
+                <a href="jsSheepCalculator.html" class="button">Calculator</a>
+                <a href="jsSheepClock.html" class="button">Clock</a>
+                <a href="jsSheepWeather.html" class="button">Weather</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <form class="grid-container">
+        <div flex-container0>
+            <input class="input" id="input0" type="text" placeholder="ENTER EMAIL">
+            <input class="input" id="input1" type="text" placeholder="ENTER PASSWORD">
+        </div>
+        <div class="flex-container1">
+            <button class="button" id="button">SIGN IN</button>
+            <button class="button" id="button">SIGN UP</button>
+        </div>
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
